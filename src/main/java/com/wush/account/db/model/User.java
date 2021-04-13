@@ -1,4 +1,4 @@
-package com.wush.account.model;
+package com.wush.account.db.model;
 
 import javax.persistence.*;
 

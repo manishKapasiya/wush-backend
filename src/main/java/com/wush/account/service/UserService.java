@@ -1,7 +1,7 @@
 package com.wush.account.service;
 
 import com.wush.account.constants.Constants;
-import com.wush.account.db.UserRepository;
+import com.wush.account.db.repository.UserRepository;
 import com.wush.account.dto.mapper.AccountToAccountDetailsMapper;
 import com.wush.account.dto.mapper.UserCreateRequestToUserMapper;
 import com.wush.account.dto.mapper.UserToUserCreateResponseMapper;
@@ -12,8 +12,8 @@ import com.wush.account.dto.response.UserDetails;
 import com.wush.account.exception.AccountCreateException;
 import com.wush.account.exception.UserCreateException;
 import com.wush.account.exception.UserSearchException;
-import com.wush.account.model.Account;
-import com.wush.account.model.User;
+import com.wush.account.db.model.Account;
+import com.wush.account.db.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

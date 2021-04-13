@@ -1,9 +1,9 @@
 package com.wush.account.service;
 
-import com.wush.account.db.AccountRepository;
+import com.wush.account.db.repository.AccountRepository;
 import com.wush.account.dto.mapper.AccountToAccountDetailsMapper;
 import com.wush.account.dto.response.AccountDetails;
-import com.wush.account.model.Account;
+import com.wush.account.db.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.wush.account.db;
+package com.wush.account.db.repository;
 
-import com.wush.account.model.User;
+import com.wush.account.db.model.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

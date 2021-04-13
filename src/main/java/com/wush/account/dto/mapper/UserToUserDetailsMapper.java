@@ -1,7 +1,7 @@
 package com.wush.account.dto.mapper;
 
 import com.wush.account.dto.response.UserDetails;
-import com.wush.account.model.User;
+import com.wush.account.db.model.User;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
