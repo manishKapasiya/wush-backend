@@ -10,13 +10,10 @@ public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @Column(name="type")
     private AccountType type;
-
-    @Column(name="userId")
-    private String userId;
 
     @Column(name="internal_status")
     private String internalStatus;
@@ -24,11 +21,14 @@ public class Account {
     @Column(name="external_status")
     private String externalStatus;
 
-    public long getId() {
+    @OneToOne(mappedBy = "account")
+    private User user;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -38,14 +38,6 @@ public class Account {
 
     public void setType(AccountType type) {
         this.type = type;
-    }
-
-    public String getUser() {
-        return userId;
-    }
-
-    public void setUser(String user) {
-        this.userId = user;
     }
 
     public String getInternalStatus() {
@@ -64,4 +56,11 @@ public class Account {
         this.externalStatus = externalStatus;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
