@@ -6,4 +6,5 @@ public class Constants {
     public static final String DEMAND_ASSIGNED="4002";
     public static final String DEMAND_PROCESSED="4000";
     public static final String DEMAND_CANCELLED="4004";
+    public static final String DEMAND_DECLINED="4005";
 }
